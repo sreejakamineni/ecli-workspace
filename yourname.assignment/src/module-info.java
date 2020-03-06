@@ -1,0 +1,2 @@
+module yourname.assignment {
+}

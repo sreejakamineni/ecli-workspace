@@ -1,0 +1,48 @@
+package as5;
+
+/******************************************************************************
+
+Online Java Compiler.
+Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+class Main
+{
+public static void main (String[] args) {
+int n = 1260, j, i, a, b, x, y, count = 0;
+while (count < 100) {
+i = Integer.toString(n).length();
+if (i % 2 == 0) {
+for (x = 1; x < n / 2; x++) {
+a = Integer.toString(x).length();
+for (y = x + 1; y < n / 2; y++) {
+b = Integer.toString(y).length();
+if(!(Integer.toString(x).endsWith("0") && Integer.toString(y).endsWith("0")))
+{
+if (a == (i / 2) && b == (i / 2)) {
+if (x * y == n) {
+    System.out.println("vampire number : " + n);
+    break;
+
+}
+
+}
+}
+//break;
+}
+}
+/*   if(fact==1)
+{
+System.out.println("vampire number : "+n);
+}
+
+}*/
+count++;
+n++;
+}
+
+
+}
+}
+}
